@@ -9,7 +9,7 @@ let container = document.getElementById("container")
     import {search,results} from "./search.js";
 function search1(){
     let value = document.getElementById("searchvalue").value
-   let response = search(`http://www.themealdb.com/api/json/v1/1/search.php?s=${value}`)
+   let response = search(`https://www.themealdb.com/api/json/v1/1/search.php?s=${value}`)
 response
 .then((res)=>{
     
@@ -18,7 +18,6 @@ response
 })
 }
  function debounce(){
-     console.log("hello")
      if(timerId){
          clearTimeout(timerId)
      }

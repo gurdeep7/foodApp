@@ -9,7 +9,7 @@ async function search(url){
 function results(data,result1){
     console.log(data)
     result1.innerHTML = null;
-    data.forEach(({strMeal,strMealThumb}) => {
+    data.forEach(({strMeal,strMealThumb,strYoutube}) => {
         let div = document.createElement("div")
         let img = document.createElement("img");
         img.src = strMealThumb;
@@ -17,6 +17,9 @@ function results(data,result1){
         let h4 = document.createElement("h4");
         h4.innerHTML=strMeal;
         div.append(img,h4)
+        div.onclick = (()=>{
+            window.location.href = strYoutube;
+        })
         result1.append(div)
     });
 
