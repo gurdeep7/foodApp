@@ -1,0 +1,41 @@
+#navbar{
+    display: flex;
+    top: 0px;
+    margin-left: 5%;
+    background-color: aquamarine;
+    position: fixed;
+    width: 90%;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+}
+#navbar>:nth-child(4){
+    position: absolute;
+    right: 30px;
+}
+#navbar>:nth-child(3){
+    position: absolute;
+    right: 100px;
+}
+#search{
+    margin: auto;
+}
+#result{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    background-color: blanchedalmond;
+    overflow: auto;
+    display: none;
+}
+#recipes>div{
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+#recipes :nth-child(2){
+    float: right;
+    margin-top: -30px;
+}
