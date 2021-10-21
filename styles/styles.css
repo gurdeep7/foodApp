@@ -26,6 +26,7 @@ input{
 #recipes>div{
     margin-top: 80px;
     font-size: 30px;
+    background-image: linear-gradient(green,yellow);
 }
 
 #recipes :nth-child(2){
@@ -48,4 +49,8 @@ input{
         text-align: center;
         width: 100%;
     }
+ }
+ body{
+    
+     background-image: linear-gradient(purple,blue);
  }
