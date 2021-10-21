@@ -4,7 +4,7 @@ function navbar(){
     <h1>Foodies king</h1>
     <div id="search">
     <input type="text" placeholder="Search Your favourite food" id="searchvalue">
-    <div id="result"></div>
+    <div id="result1"></div>
 </div>
 <div><a href="index.html">Home</a> </div>
 <div>Login</div>
