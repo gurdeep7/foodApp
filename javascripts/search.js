@@ -25,4 +25,23 @@ function results(data,result1){
 
 }
 
-export{search,results}
+function append_data(data1,dish){
+dish.innerHTML = null;
+data1.forEach(({strMeal,strMealThumb,strYoutube}) => {
+    let div = document.createElement("div")
+    div.style.width= "50%"
+    div.style.margin = "auto"
+    let img = document.createElement("img");
+    img.src = strMealThumb;
+    img.style.width = "100%"
+    let h4 = document.createElement("h1");
+    h4.innerHTML=strMeal;
+    div.append(img,h4)
+    div.onclick = (()=>{
+        window.location.href = strYoutube;
+    })
+    dish.append(div)
+});
+}
+
+export{search,results,append_data}
