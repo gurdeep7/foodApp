@@ -11,7 +11,7 @@ function navbar(){
 </div>
 <div id="recipes">
 <div><a href="recipeday.html">Recipe of Day</a></div>
-<div><a href="latesetRecipe.html">Latest recipe</a></div>
+<div><a href="latest.html">Latest recipe</a></div>
 </div>`
 }
 export default navbar
